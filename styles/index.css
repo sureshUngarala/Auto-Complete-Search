@@ -1,0 +1,123 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#searchInputContainer {
+  position: relative;
+  border: 1px solid #dfe1e5;
+  width: 300px;
+  height: 34px;
+  border-radius: 3px;
+  margin-top: 25px;
+  outline: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.emptyInput {
+  background-color: #dfe1e5;
+}
+#searchInputContainer #search {
+  width: 15px;
+  height: 15px;
+  margin: 9.5px;
+}
+#searchInputContainer #close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 12px;
+  height: 12px;
+  margin: 11px;
+  cursor: pointer;
+  display: none;
+}
+
+#searchInputContainer input {
+  position: absolute;
+  border: 0;
+  height: 30px;
+  vertical-align: middle;
+  width: 248px;
+  outline: 0;
+  margin: 1px;
+  margin-left: 0px;
+  font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#searchListContainer {
+  position: relative;
+  width: 300px;
+  max-height: 300px;
+  outline: 0;
+  border: 1px solid #dfe1e5;
+  border-top: 0px;
+  border-radius: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  overflow: scroll;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+#searchListContainer user-details {
+  outline: 0;
+}
+#searchListContainer .user-item {
+  padding: 10px 20px;
+  outline: 0;
+  cursor: pointer;
+  border-bottom: 1px solid #dfe1e5;
+}
+#searchListContainer .name,
+#searchListContainer .divider,
+#searchListContainer .item,
+#searchListContainer .address,
+#searchListContainer .pincode {
+  margin-top: 5px;
+}
+#searchListContainer .name {
+  font-size: 15px;
+  opacity: 0.7;
+}
+#searchListContainer .address,
+#searchListContainer .pincode,
+#searchListContainer .item {
+  font-size: 13px;
+  opacity: 0.7;
+}
+#searchListContainer ul {
+  margin: 0px;
+  list-style: none;
+}
+#searchListContainer ul li::before {
+  content: "\2022";
+  display: inline-block;
+  font-weight: bold;
+  color: #1d6bdd;
+  margin-left: -3em;
+  width: 0.75em;
+}
+#searchListContainer .highlight {
+  color: #1d6bdd;
+  font-weight: bold;
+}
+#searchListContainer .divider {
+  height: 1px;
+  background-color: #dfe1e5;
+}
+
+#searchListContainer .no-results {
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+#searchListContainer .hovered {
+  background-color: lightyellow;
+}

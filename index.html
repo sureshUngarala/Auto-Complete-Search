@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Search</title>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+
+<body>
+    <div id="searchContainer">
+        <div id="searchInputContainer" class="emptyInput">
+            <img id="search" src="assets/search.svg" alt="Search">
+            <input placeholder="Search users by ID, address, name or pin code" id="search-input" class="emptyInput"
+                tabindex="1" title="Search users by ID, address, name or pin code">
+            <img id="close" src="assets/close.svg" alt="close">
+        </div>
+        <div id="searchListContainer">
+        </div>
+    </div>
+    <script src="mock-api-data/data.js"></script>
+    <script src="web-components/user-details.js"></script>
+    <script src="web-components/no-results.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
